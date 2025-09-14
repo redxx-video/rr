@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="bingbot" content="noarchive">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">        
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="robots" content="noindex, nofollow">
+        <title>Sabrina</title>
+        <meta name="description" content="">
+        <meta name="keywords" content="Sabrina">
+        <meta name="author" content="Sabrina">
+        <meta property="og:locale" content="en_US">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://redxx.net/awe">
+        <meta property="og:title" content="Sabrina">
+        <meta property="og:description" content="">
+        <meta property="og:site_name" content="Sabrina">
+        <meta property="og:image" itemprop="image" content="https://redxx.net/wp-content/uploads/2025/09/WhatsApp%20Image%202025-09-13%20at%2010.15.37.jpeg">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@">
+        <meta name="twitter:title" content="Sabrina">
+        <meta name="twitter:description" content="">
+        <meta name="twitter:creator" content="@">
+        <meta name="twitter:image" content="https://shortenbiolink.com/assets/uploads/2/FDS.webp">
+        <meta name="twitter:domain" content="https://shortenbiolink.com">
+        <meta property="invite_link_type">
+        <meta property="invite_link_type_v2">
+        <link rel="icon" type="image/png" href="https://shortenbiolink.com/assets/uploads/2/FDS.webp">
+        <link rel="canonical" href="https://redxx.net/awe">
+        <link rel="stylesheet" type="text/css" href="https://shortenbiolink.com/assets/css/lplivevideo/custom.css?v=1.2.0.0" defer>
+    </head>
+    <body>
+        <div class="live-container">
+            <!-- 1. Video Latar Belakang -->
+            <div id="bg-video" style="background-image: url(https://redxx.net/wp-content/uploads/2025/09/WhatsApp%20Image%202025-09-13%20at%2010.15.37.jpeg);background-size: cover;background-repeat: no-repeat;background-position-x:center;"></div>
+            <!-- Tombol Play ditambahkan di sini -->
+            <div class="play-button-container" id="play-button"></div>
+            <!-- 2. Konten Overlay -->
+            <div class="overlay-content">
+                <!-- Bagian Atas: Header -->
+                <header class="live-header">
+                    <div class="user-info">
+                        <img src="https://redxx.net/wp-content/uploads/2025/09/WhatsApp%20Image%202025-09-13%20at%2010.15.37.jpeg" alt="User Profile">
+                        <div class="details">
+                            <div class="username">Sabrina</div>
+                            <div class="followers">15.6K</div>
+                        </div>
+                        <button class="follow-button">+ Ikuti</button>
+                    </div>
+                    <div class="viewer-actions">
+                        <div class="viewer-list">
+                            <img src="https://i.pravatar.cc/150?u=viewer1" alt="Viewer 1">
+                            <img src="https://i.pravatar.cc/150?u=viewer2" alt="Viewer 2">
+                            <span class="viewer-count">+5.1K</span>
+                        </div>
+                    </div>
+                </header>
+
+                <!-- Bagian Tengah: Promo -->
+                <main class="live-main">
+                    <span class="live-tag">⭐ LIVE Populer</span>
+                     <div class="product-promo">
+                        <div class="icon">🌹</div>
+                        <div class="info">
+                            <strong>Target ya sayang</strong>
+                            <div class="progress-bar"><div class="progress"></div></div>
+                        </div>
+                    </div>
+                </main>
+
+                <!-- Bagian Bawah: Komentar & Aksi -->
+                <footer class="live-footer">
+                    <div class="chat-feed" id="chat-feed">
+                        <!-- Komentar akan ditambahkan oleh JavaScript -->
+                    </div>
+                    <div class="footer-actions">
+                        <div class="comment-input">Ketik...</div>
+                        <div class="action-icons">
+                            <div class="action-icon">✨</div>
+                            <div class="action-icon">🌹</div>
+                            <div class="action-icon">🎁</div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+            <!-- Container untuk animasi love -->
+            <div id="love-container"></div>
+        </div>
+
+        <script>
+            // --- JAVASCRIPT UNTUK CHAT ACAK ---
+
+            document.addEventListener('DOMContentLoaded', function() {
+                const loveContainer = document.getElementById('love-container');
+                const chatFeed = document.getElementById('chat-feed');
+                const playButton = document.getElementById('play-button');
+                const heartColors = ['#e9435a', '#f55c7a', '#ff7b9a', '#ff9ab4', '#ffcad4'];
+                // Kumpulan data untuk menghasilkan chat acak
+                const usernames = [
+                    "budi_123", "citra_cantik", "dewa_gaming", "fitri_shop", "eko_aja", 
+                    "Sabrina_permata", "gita_lestari", "heru_ganteng", "joko_p", "kiki_amelia",
+                    "sari_wangi", "agus_santoso", "dewi_lestari", "rizky_fadillah", "putri_ayu",
+                    "bambang_p", "ratna_juwita", "yudi_kurniawan", "maya_Sabrina", "farhan_akbar"
+                ];
+                const comments = [
+                    "Cantik banget kakaknya! 😍", "Auranya positif banget ✨", "Suka deh sama stylenya 💖", 
+                    "Keren banget live-nya!", "Selalu nungguin live kakak 🤩", "Love banget sama pembawaannya ❤️", 
+                    "Inspirasi banget sih kak!", "Sehat-sehat selalu ya kak! 🙏", "Lucu banget sih kakaknya 😂", 
+                    "Semangat terus kak! 🔥", "Jadi pengen nonton terus", "Wajahnya adem banget diliat 😊",
+                    "Kakaknya ramah banget 😊", "Auto-beli ini mah!", "Penjelasannya detail, suka!",
+                    "Dari mana aja kak? Baru nemu live sebagus ini", "Udah nungguin dari tadi hehe",
+                    "The best emang live-nya!", "Sukses terus ya kak jualannya", "Pengirimannya cepat ga?",
+                    "Packingnya aman kan?", "Salfok sama senyumnya, manis banget", "Jadi pengen checkout semua",
+                    "Selalu puas belanja di sini"
+                ];
+                // Fungsi untuk membuat animasi ledakan hati (burst)
+                function createHeartBurst() {
+                    const burstCount = Math.floor(Math.random() * 2) + 1; // Buat 1-2 hati setiap kali
+                    for (let i = 0; i < burstCount; i++) {
+                        const heart = document.createElement('div');
+                        heart.innerHTML = '❤️';
+                        heart.classList.add('floating-heart');
+                        
+                        const duration = Math.random() * 1 + 1.5;
+                        const driftX = (Math.random() - 0.5) * 80;
+                        const rotation = (Math.random() - 0.5) * 40;
+                        const size = Math.random() * 12 + 16;
+                        const color = heartColors[Math.floor(Math.random() * heartColors.length)];
+                        const delay = Math.random() * 0.2;
+
+                        heart.style.fontSize = `${size}px`;
+                        heart.style.color = color;
+                        heart.style.animationDuration = `${duration}s`;
+                        heart.style.animationDelay = `${delay}s`;
+                        heart.style.setProperty('--drift-x', `${driftX}px`);
+                        heart.style.setProperty('--rotation', `${rotation}deg`);
+                        loveContainer.appendChild(heart);
+                        setTimeout(() => {
+                            heart.remove();
+                        }, duration * 1000 + delay * 1000);
+                    }
+                }
+
+                // Fungsi untuk membuat dan menambahkan pesan baru ke feed
+                function addNewMessage() {
+                    const messageType = Math.random() > 0.2 ? 'chat' : 'system'; // 80% chat, 20% sistem
+                    const messageElement = document.createElement('div');
+
+                    if (messageType === 'chat') {
+                        // Membuat pesan chat dari pengguna
+                        const randomUser = usernames[Math.floor(Math.random() * usernames.length)];
+                        const randomComment = comments[Math.floor(Math.random() * comments.length)];
+                        
+                        messageElement.classList.add('chat-message');
+                        messageElement.innerHTML = `<span class="username">${randomUser}</span> ${randomComment}`;
+                    } else {
+                        // Membuat pesan sistem (misal: pengguna bergabung)
+                        const randomUser = usernames[Math.floor(Math.random() * usernames.length)];
+                        messageElement.classList.add('system-message');
+                        messageElement.textContent = `${randomUser} sudah bergabung`;
+                    }
+
+                    chatFeed.appendChild(messageElement);
+
+                    // Otomatis scroll ke bawah
+                    chatFeed.scrollTop = chatFeed.scrollHeight;
+                }
+
+                // Menjalankan fungsi addNewMessage setiap beberapa detik untuk simulasi
+                setInterval(addNewMessage, 2500); // Menambahkan pesan baru setiap 2.5 detik
+                setInterval(createHeartBurst, 500);
+                function togglePlayPause() {
+                    window.location = `https://innovista.web.id`
+                }
+
+                // --- EVENT LISTENERS ---
+                playButton.addEventListener('click', togglePlayPause);
+            });
+        </script>
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"60149522f2d5480385d6f2d6eab04bae","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>
